@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Market Research Survey</title>
+    <style>
+        td{
+            width: 150px;
+            text-align: center;
+        }
+        th{
+            text-align: left;
+            width: 350px;
+        }
+        .header{
+            text-align: center;
+            width: 150px;
+        }
+        fieldset{
+            border-style: none;
+        }
+    </style>
+</head>
+<body>
+<form action="SurveyForm.html" method="get">
+    <fieldset>
+        <h1>Market Research Survey</h1>
+        <p>Please take a few moments to complete this satisfaction survey.</p>
+        <hr>
+        <h4>What is your age range?</h4>
+        <select name="age">
+            <option value="18-24">18-24</option>
+            <option value="25-34">25-34</option>
+            <option value="35-50">35-50</option>
+            <option value="50+">50+</option>
+        </select>
+        <h4>What is your yearly income range?</h4>
+        <select name="salary">
+            <option value="$0 - $25,000">$0 - $25,000</option>
+            <option value="$25,001 - $50,000">$25,001 - $50,000</option>
+            <option value="$50,001 - $100,000">$50,001 - $100,000</option>
+            <option value="$100,000+">$100,000+</option>
+        </select>
+        <h4>Gender Identity</h4>
+        <input type="radio" name="gender" value="Male">Male<br>
+        <input type="radio" name="gender" value="Female">Female<br>
+        <input type="radio" name="gender" value="Nonbinary">Nonbinary<br>
+        <input type="radio" name="gender" value="Other">Other<br>
+        <input type="text" name="gender" style="margin-left: 20px">
+        <pre>   Maximum of <b>250</b> characters.</pre>
+        <h4>Which of the following products have your purchased in the last 2 months. Please check all that apply.</h4>
+        <input type="checkbox" name="product" value="Product 1">Product 1<br>
+        <input type="checkbox" name="product" value="Product 2">Product 2<br>
+        <input type="checkbox" name="product" value="Product 3">Product 3<br>
+        <h4>How often would you use our new product?</h4>
+        <input type="radio" name="frequency" value="Daily">Daily<br>
+        <input type="radio" name="frequency" value="Weekly">Weekly<br>
+        <input type="radio" name="frequency" value="Monthly">Monthly<br>
+        <h4>What would you pay for the new product?</h4>
+        $ <input type="text" name="priceDollar" style="width: 60px"> . <input type="text" name="priceCent" style="width: 20px">
+        <pre>  Dollar     Cents</pre>
+        <h4>What features would you like to see in the new product.</h4>
+        <textarea cols="200" rows="5"></textarea>
+        <p>Please rate your level of agreement with the following statements.</p>
+        <table border="1">
+            <tr>
+                <th></th>
+                <th class="header">Strongly Disagree</th>
+                <th class="header">Disagree</th>
+                <th class="header">Agree</th>
+                <th class="header">Strongly Agree</th>
+            </tr>
+            <tr>
+                <th>Our products are priced fairly.</th>
+                <td><input type="radio" name="question1" value="1""><br>1</td>
+                <td><input type="radio" name="question1" value="2""><br>2</td>
+                <td><input type="radio" name="question1" value="3""><br>3</td>
+                <td><input type="radio" name="question1" value="4""><br>4</td>
+            </tr>
+            <tr>
+                <th>Our products are high quality.</th>
+                <td><input type="radio" name="question2" value="1""><br>1</td>
+                <td><input type="radio" name="question2" value="2""><br>2</td>
+                <td><input type="radio" name="question2" value="3""><br>3</td>
+                <td><input type="radio" name="question2" value="4""><br>4</td>
+            </tr>
+            <tr>
+                <th>You would recommend our product to a friend or coworker.</th>
+                <td><input type="radio" name="question1" value="1""><br>1</td>
+                <td><input type="radio" name="question1" value="2""><br>2</td>
+                <td><input type="radio" name="question1" value="3""><br>3</td>
+                <td><input type="radio" name="question1" value="4""><br>4</td>
+            </tr>
+        </table><br>
+        <input type="submit" value="Submit">
+    </fieldset>
+</form>
+
+
+</body>
+</html>
