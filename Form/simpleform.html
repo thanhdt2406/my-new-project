@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Simple Form</title>
+    <style>
+        * {
+            font-family: "Lucida Grande", "Lucida Sans Unicode", Tahoma, sans-serif;
+        }
+
+        .required {
+            color: red;
+        }
+
+        .name {
+            width: 120px;
+        }
+
+        .title {
+            font-size: 15px;
+            font-weight: bold;
+        }
+
+        .phoneNumber {
+            width: 50px;
+        }
+
+        .btn {
+            margin: 15px 30px;
+        }
+    </style>
+</head>
+<body>
+<form action="simpleform.html" method="get">
+    <fieldset style="width: 270px">
+        <h1>Order Form</h1>
+        <p class="title">What would you like to buy? <span class="required">*</span></p>
+        <select>
+            <option value=" ">A</option>
+            <option>B (+ 0.5$)</option>
+            <option>C (+ 2$)</option>
+        </select>
+        <p class="title">How many would you like to order? <span class="required">*</span></p>
+        <input type="radio" name="rd"> 1 - 10$<br>
+        <input type="radio" name="rd"> 2 - 19$<br>
+        <input type="radio" name="rd"> 3 - 28$<br>
+        <p class="title">Name <span class="required">*</span></p>
+        <input class="name" name="fname" type="text" placeholder="FirstName">
+        <input class="name" name="lname" type="text" placeholder="LastName">
+        <p class="title">Email</p>
+        <input class="email" name="mail" type="text" placeholder="abc@example.com">
+        <p class="title">Phone Number <span class="required">*</span></p>
+        <input class="phoneNumber" type="text" name="phoneNumber1"> -
+        <input class="phoneNumber" type="text" name="phoneNumber1"> -
+        <input class="phoneNumber" type="text" name="phoneNumber1"><br>
+        <input class="btn" type="submit" name="submit" value="Submit">
+        <input class="btn" type="reset">
+    </fieldset>
+
+</form>
+</body>
+</html>

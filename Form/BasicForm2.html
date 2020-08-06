@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        .background {
+            background-color: bisque;
+            margin: 0 auto;
+            width: 600px;
+            height: 500px;
+        }
+
+        .title {
+            background-color: lightblue;
+            width: 570px;
+            margin: 0 auto;
+            text-align: left;
+            font-size: 40px;
+            color: blue;
+        }
+
+        .left {
+
+            width: 200px;
+            height: 350px;
+            float: left;
+        }
+
+        .right {
+
+            width: 350px;
+            height: 350px;
+            float: right;
+        }
+    </style>
+</head>
+<body>
+<div class="background">
+    <form action="BasicForm2.html" method="get">
+        <fieldset>
+            <div class="title">
+                <p>ĐĂNG KÍ HỌC VIÊN</p>
+            </div>
+            <div class="left">
+                <p>Họ và tên</p>
+                <p>Ngày sinh</p>
+                <p>Giới tính</p>
+                <p>Địa chỉ</p><br>
+                <p>Lớp</p>
+                <p>Email</p>
+                <p>Điện thoại</p>
+            </div>
+            <div class="right">
+                <br>
+                <input type="text" name="yourname" placeholder="Nguyễn Văn A"><br><br>
+                <input type="text" name="dob" placeholder="01/01/2000"><br><br>
+                <input type="radio" name="sex">Nam
+                <input type="radio" name="sex">Nữ<br><br>
+                <textarea cols="30" rows="4" name="address"
+                          placeholder="Số 15 ngõ 91 Đường Cầu Giấy, Quận Cầu Giấy, Thành phố Hà Nội"></textarea><br>
+                <select name="class">
+                    <option value="0">-Chọn lớp-</option>
+                    <option value="CG1">CodeGym1</option>
+                    <option value="CG2">CodeGym2</option>
+                    <option value="CG3">CodeGym3</option>
+                    <option value="CG4">CodeGym4</option>
+                    <option value="CG5">CodeGym5</option>
+                </select><br><br>
+                <input type="text" name="email" placeholder="abc123@example.com"><br><br>
+                <input type="text" name="phonenumeber" placeholder="0987654321"><br><br>
+                <input type="submit" value="Đăng kí">
+                <input type="reset" value="Nhập lại">
+            </div>
+
+        </fieldset>
+    </form>
+</div>
+</body>
+</html>

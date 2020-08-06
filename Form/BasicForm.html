@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Basic Form</title>
+    <style>
+        .background {
+            width: 700px;
+            height: auto;
+            margin: 0 auto;
+            background-color: aqua;
+            padding: 10px 0;
+        }
+
+        .form {
+            width: 600px;
+            margin: auto;
+            background-color: white;
+        }
+
+        fieldset {
+            border-style: none;
+        }
+
+        .heading {
+            background-color: orange;
+            width: 580px;
+            height: auto;
+        }
+
+        .heading-title {
+            text-align: center;
+            font-size: 35px;
+            color: white;
+        }
+
+        .content {
+            width: 580px;
+            height: 130px;
+        }
+
+        .textbox1 {
+            margin-bottom: 10px;
+        }
+        .name{
+            color: blue;
+        }
+        .hobby{
+            color: blue;
+        }
+        .email {
+            margin-left: 25px;
+            color: blue;
+        }
+
+        .hobby {
+            margin-left: 10px;
+        }
+        .hb1{
+            position: absolute;
+            margin-left: 70px;
+        }
+        .hb2{
+            position: absolute;
+            margin-left: 200px;
+        }
+        .hb3{
+            position: absolute;
+            margin-left: 330px;
+        }
+        .btn{
+            margin-left: 70px;
+        }
+        .rd-name{
+            color: orange;
+        }
+    </style>
+</head>
+<body>
+<div class="background">
+    <form class="form" action="BasicForm.html" method="get">
+        <fieldset>
+            <div class="heading">
+                <p class="heading-title">SỞ THÍCH CỦA BẠN</p>
+            </div>
+            <div class="content">
+                <span class="name">Họ và tên:</span>
+                <input class="textbox1" type="text" name="yourname"><br>
+                <span class="email">Email:</span>
+                <input class="textbox2" type="text" name="email"><br>
+                <div>
+                    <span class="hobby" style="position: absolute">Sở thích:</span>
+                    <div class="hb1">
+                        <label><input class="rd" type="checkbox" name="hobby" value="Thể thao"><span
+                                class="rd-name">Thể thao</span></label><br>
+                        <label><input class="rd" type="checkbox" name="hobby" value="Thể thao"><span
+                                class="rd-name">Âm nhạc</span></label><br>
+                        <label><input class="rd" type="checkbox" name="hobby" value="Thể thao"><span
+                                class="rd-name">Đọc sách</span></label><br>
+                    </div>
+                    <div class="hb2">
+                        <label><input class="rd" type="checkbox" name="hobby" value="Thể thao"><span
+                                class="rd-name">Lướt web</span></label><br>
+                        <label><input class="rd" type="checkbox" name="hobby" value="Thể thao"><span
+                                class="rd-name">Chơi game</span></label><br>
+                        <label><input class="rd" type="checkbox" name="hobby" value="Thể thao"><span
+                                class="rd-name">Điện ảnh</span></label><br>
+                    </div>
+                    <div class="hb3">
+                        <label><input class="rd" type="checkbox" name="hobby" value="Thể thao"><span
+                                class="rd-name">Du lịch</span></label>
+                    </div>
+                </div>
+
+            </div>
+            <div class="btn">
+                <input type="submit" value="Gửi thông tin">
+                <input type="reset" value="Nhập lại">
+            </div>
+        </fieldset>
+
+
+    </form>
+</div>
+
+</body>
+</html>
